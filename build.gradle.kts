@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin(KotlinJvm) version Versions.kotlinVersion
 }
 
 group = "de.chelbing"
@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation(Dependencies.r2dbc)
     testImplementation(kotlin("test"))
 }
 
