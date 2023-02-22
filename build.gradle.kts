@@ -11,6 +11,8 @@ repositories {
 
 dependencies {
     implementation(Dependencies.r2dbc)
+    implementation(Dependencies.kotlinxCoroutines)
+    implementation(Dependencies.kotlinxReactor)
     testImplementation(kotlin("test"))
 }
 

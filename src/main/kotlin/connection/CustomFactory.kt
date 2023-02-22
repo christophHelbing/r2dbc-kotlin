@@ -4,7 +4,7 @@ import io.r2dbc.spi.ConnectionFactories
 import io.r2dbc.spi.ConnectionFactory
 import io.r2dbc.spi.ConnectionFactoryOptions
 
-object ConnectionFactory {
+object CustomFactory {
     fun getFactory(): ConnectionFactory {
         val driver = System.getenv("DRIVER")
         val host = System.getenv("HOST")
