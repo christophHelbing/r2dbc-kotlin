@@ -1,4 +1,4 @@
-package connection
+package plain.connection
 
 import io.r2dbc.spi.ConnectionFactories
 import io.r2dbc.spi.ConnectionFactory

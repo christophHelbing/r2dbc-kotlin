@@ -16,6 +16,13 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "11"
+        freeCompilerArgs = listOf ("-Xcontext-receivers")
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 }

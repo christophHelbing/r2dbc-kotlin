@@ -1,4 +1,6 @@
-import connection.CustomFactory
+package plain
+
+import plain.connection.CustomFactory
 import io.r2dbc.spi.Connection
 import io.r2dbc.spi.ConnectionFactory
 import kotlinx.coroutines.flow.Flow
